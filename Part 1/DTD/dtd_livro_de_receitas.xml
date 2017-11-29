@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE livro_de_receitas SYSTEM "livro_de_receitas.dtd">
+
+<livro_de_receitas>
+
+	<cabeçalho>
+		<titulo_do_conjunto_de_receitas>Cozinha Regional Portuguesa - Carnes </titulo_do_conjunto_de_receitas>
+		<autor>Bruno Cabral</autor>
+		<data_publicaçao>11-10-2006</data_publicaçao>
+		<resumo>Livro de receitas simples, para qualquer pessoa.</resumo>
+	</cabeçalho>
+
+	<parte tipo="pratos">
+		<titulo>Prato Principal</titulo>
+		<texto_introdutorio />
+		<url url="http://www.blabla.pt/prato_principal.png" />
+
+		<secçao tipo="carnes">
+			<titulo>Prato de Carne</titulo>
+			<texto_introdutorio>Pratos confecionados usando carne.</texto_introdutorio>
+			<url />
+
+			<sub_secçao tipo="porco">
+				<titulo>Prato com Porco</titulo>
+				<texto_introdutorio>Usando carne de porco como ingredente principal.</texto_introdutorio>
+				<url />
+
+				<receita id_receita="carne_porco_alentejana" dificuldade="médio" custo="caro" categoria="prato">
+					<ingredientes>
+
+						<ingrediente id_ingrediente="carne_porco">
+							<nome>Carne de Porco</nome>
+							<quantidade>1.250</quantidade>
+							<unidade>Kg</unidade>
+						</ingrediente>
+
+						<ingrediente id_ingrediente="ameijoas">
+							<nome>Ameijoas</nome>
+							<quantidade>1</quantidade>
+							<unidade>Kg</unidade>
+						</ingrediente>
+
+						<ingrediente id_ingrediente="vinho_branco">
+							<nome>Vinho Branco </nome>
+							<quantidade>1</quantidade>
+							<unidade>Copo</unidade>
+						</ingrediente>
+
+						<ingrediente id_ingrediente="batatas">
+							<nome>Batatas</nome>
+							<quantidade>1</quantidade>
+							<unidade>Kg</unidade>
+						</ingrediente>
+
+						<ingrediente id_ingrediente="banha">
+							<nome>Banha</nome>
+							<quantidade>2</quantidade>
+							<unidade>Colheres</unidade>
+						</ingrediente>
+					</ingredientes>
+
+					<nome>Carne de Porco à Alentejana</nome>
+					<tempo>Médio</tempo>
+					<calorias>73259</calorias>
+					<url url="http://www.blabla.pt/carne_alentejana.png" />
+
+					<descriçao>
+						<passos>
+							<passo>Cortar a carne<ref_ingrediente id_ingrediente="carne_porco" />.</passo>
+							<passo>Crie um refugado juntando o vinho branco<ref_ingrediente id_ingrediente="vinho_branco" />à carne.<ref_ingrediente id_ingrediente="carne_porco" /><url url="http://www.blabla.pt/imagem_refugado.png" /></passo>
+							<passo>Ponha as ameijoas<ref_ingrediente id_ingrediente="ameijoas" />de molho em água com sal de seguida cozinhe-as até estasabrirem.</passo>
+							<passo>Aqueça a banha<ref_ingrediente id_ingrediente="banha" />e ao mesmo tempo corte e frite as batatas.<ref_ingrediente id_ingrediente="batatas" /></passo>
+							<passo>Misture todos os ingredientes e sirva.<url url="http://www.blabla.pt/carne_alentejana.png" /></passo>
+						</passos>
+					</descriçao>
+				</receita>
+			</sub_secçao>
+			<sub_secçao tipo="vaca">
+			<titulo>Prato de Vaca</titulo>
+			<texto_introdutorio>Usando carne de vaca como ingrediente principal</texto_introdutorio>
+			
+			<receita id_receita="carne_a_jardineira" dificuldade="díficil" custo="barato" categoria="prato">
+			<ingredientes>
+
+						<ingrediente id_ingrediente="carne_vaca">
+							<nome>Carne de Vaca</nome>
+							<quantidade>2</quantidade>
+							<unidade>Kg</unidade>
+						</ingrediente>
+			</ingredientes>
+			<nome>Carne à Jardineira</nome>
+					<tempo>Rápido</tempo>
+					<calorias>2358426</calorias>
+					<url url="http://www.blabla.pt/carne_de_vaca.png" />
+					<descriçao>
+						<texto>Metodo de preparação igual ao da carne de porco à alentejana<ref_receita id_receita="carne_porco_alentejana" />basta apenas trocar o uso de carne de porco<ref_ingrediente id_ingrediente="carne_porco" />por carne de vaca<ref_ingrediente id_ingrediente="carne_vaca" /></texto>
+					</descriçao>
+			</receita>
+			</sub_secçao>
+		</secçao>
+	</parte>
+
+</livro_de_receitas>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT livro_de_receitas (cabeçalho, parte*)> 
+
+
+<!ELEMENT cabeçalho (titulo_do_conjunto_de_receitas+, autor+, data_publicaçao, resumo?)>
+<!ELEMENT titulo_do_conjunto_de_receitas (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT data_publicaçao (#PCDATA)>
+<!ELEMENT resumo (#PCDATA)>
+
+
+<!ELEMENT parte (titulo, texto_introdutorio?, url?, secçao*)>  
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT texto_introdutorio (#PCDATA)> 
+<!ELEMENT url EMPTY>
+<!ATTLIST parte tipo ID #REQUIRED>
+<!ATTLIST url url CDATA #IMPLIED> 
+
+
+<!ELEMENT secçao (titulo, texto_introdutorio?, url?,sub_secçao*)>
+<!ATTLIST secçao tipo ID #REQUIRED>
+
+
+<!ELEMENT sub_secçao (titulo, texto_introdutorio?, url?,receita+)>
+<!ATTLIST sub_secçao tipo ID #REQUIRED>
+
+
+<!ELEMENT receita (ingredientes+, nome+ , tempo?, calorias?,url? ,descriçao)> 
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT tempo (#PCDATA)>
+<!ELEMENT calorias (#PCDATA)>
+<!ATTLIST receita id_receita ID #REQUIRED>
+<!ATTLIST receita custo (barato | medio | caro) #IMPLIED>
+<!ATTLIST receita dificuldade (simples | médio | díficil) #IMPLIED>
+<!ATTLIST receita categoria CDATA #IMPLIED>  
+
+
+<!ELEMENT ingredientes (ingrediente+)>
+<!ATTLIST ingrediente id_ingrediente ID #REQUIRED >
+
+
+<!ELEMENT ingrediente (nome , (quantidade , unidade)?)>
+<!ELEMENT quantidade (#PCDATA)>
+<!ELEMENT unidade (#PCDATA)>
+
+
+<!ELEMENT descriçao (passos | texto)>
+
+
+<!ELEMENT passos (passo+)>
+<!ELEMENT passo (#PCDATA  | url | ref_ingrediente | ref_receita )*>
+
+
+<!ELEMENT ref_ingrediente EMPTY>
+<!ATTLIST ref_ingrediente id_ingrediente IDREF #REQUIRED>
+		  
+
+<!ELEMENT ref_receita EMPTY>
+<!ATTLIST ref_receita id_receita IDREF #REQUIRED>	
+
+
+<!ELEMENT texto (#PCDATA | ref_ingrediente | ref_receita)*>
