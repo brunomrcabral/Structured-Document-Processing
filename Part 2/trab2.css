@@ -1,0 +1,102 @@
+@charset "ISO-8859-1";
+
+body {
+		counter-reset: section;      
+		background-color: #FAFAD2;	
+}
+
+h1,h2,h3,h4	{
+		border: 3px solid black;
+		width: 98%;
+		font-weight: bold;
+		font-family:arial, helvetiva;	
+		
+}
+
+h2,h3,h4{
+	text-align: center;
+}
+	
+h1 {
+	font-size: 220%;
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+h2 {
+	font-size: 180%;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+h3 {
+	font-size: 150%;
+	padding:5px;
+    border-radius: 10px;
+}
+
+h4{
+	font-size:110%;
+	padding: 2.5px;
+}
+
+p {
+    text-indent: 10px;
+    font-size: 100%;
+    font-style: normal;
+    font-family: arial, helvetiva;
+}
+
+div#parte {
+	border: 3px solid black;
+	padding: 10px;
+	background: #2F5FA7;
+
+}
+div#secçao {
+	border: 3px dashed black;
+	padding: 10px;
+	background: #ADD8E6;
+
+}
+div#sub_secçao {
+	border: 3px dotted black;
+	padding: 10px;
+	margin-bottom: 5px;
+	background: #D3D3D3;
+}
+fieldset {
+	background: #FFFFFF;
+}
+
+div#ingredientes  a {
+	text-indent: 70px;
+}
+
+
+legend {
+	text-align: center;
+	font-size: 120%;
+	font-weight: bold
+}
+ul{
+	font-family: "Times New Roman", Times, serif;
+	font-size:16px;
+	
+}
+img{
+	width:259px;
+	height:194px; 	
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10%;
+  	
+}
+
+b a  {
+	 color:#000000;
+	 text-decoration: none;
+	 text-transform: lowercase;
+}
