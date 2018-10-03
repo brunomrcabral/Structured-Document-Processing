@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE livro_de_receitas SYSTEM "livro_de_receitas.dtd">
+
+<?xml-stylesheet type="text/xsl" href="rdf_livro_de_receitas.xsl"?>
+
+<livro_de_receitas>
+
+	<cabeçalho>
+		<titulo_do_conjunto_de_receitas>Cozinha Regional Portuguesa - Carnes </titulo_do_conjunto_de_receitas>
+		<autor>Bruno Cabral</autor>
+		<data_publicaçao>11-10-2006</data_publicaçao>
+		<resumo>Livro de receitas simples, para qualquer pessoa.</resumo>
+	</cabeçalho>
+	<corpo>
+		<parte tipo="pratos">
+			<titulo>Prato Principal</titulo>
+			<texto_introdutorio />
+
+
+			<secçao tipo="carnes">
+				<titulo>Prato de Carne</titulo>
+				<texto_introdutorio>Pratos confecionados usando carne.</texto_introdutorio>
+
+				<sub_secçao tipo="porco">
+					<titulo>Prato com Porco</titulo>
+					<texto_introdutorio>Usando carne de porco como ingredente
+						principal.</texto_introdutorio>
+
+					<receita id_receita="carne_porco_alentejana" dificuldade="Média"
+						custo="Caro" categoria="Prato" tempo="Rápido">
+						<ingredientes>
+
+							<ingrediente id_ingrediente="carne_porco">
+								<nome>Carne de Porco</nome>
+								<quantidade>1.250</quantidade>
+								<unidade> Kg</unidade>
+							</ingrediente>
+
+							<ingrediente id_ingrediente="ameijoas">
+								<nome>Amêijoas</nome>
+								<quantidade>1</quantidade>
+								<unidade> Kg</unidade>
+							</ingrediente>
+
+							<ingrediente id_ingrediente="vinho_branco">
+								<nome>Vinho Branco </nome>
+								<quantidade>1</quantidade>
+								<unidade> Copo</unidade>
+							</ingrediente>
+
+							<ingrediente id_ingrediente="batatas">
+								<nome>Batatas</nome>
+								<quantidade>1</quantidade>
+								<unidade> Kg</unidade>
+							</ingrediente>
+
+							<ingrediente id_ingrediente="banha">
+								<nome>Banha</nome>
+								<quantidade>2</quantidade>
+								<unidade> Colheres</unidade>
+							</ingrediente>
+						</ingredientes>
+
+						<nome>Carne de Porco à Alentejana</nome>
+						<calorias>7327</calorias>
+						<url
+							url="http://ot-foodspotting-production.s3.amazonaws.com/reviews/3295237/thumb_275.jpg?1363610173"
+							alt="Stock Image" />
+
+						<descriçao>
+							<passos>
+								<passo>
+									Cortar a
+									<ref_ingrediente id_ingrediente="carne_porco" />
+									.
+								</passo>
+								<passo>
+									Crie um refugado juntando o
+									<ref_ingrediente id_ingrediente="vinho_branco" />
+									à
+									<ref_ingrediente id_ingrediente="carne_porco" />
+									.
+								</passo>
+								<passo>
+									Ponha as
+									<ref_ingrediente id_ingrediente="ameijoas" />
+									de molho em água com sal de seguida cozinhe-as até estas
+									abrirem.
+								</passo>
+								<passo>
+									Aqueça a
+									<ref_ingrediente id_ingrediente="banha" />
+									e ao mesmo tempo corte e frite as
+									<ref_ingrediente id_ingrediente="batatas" />
+									.
+								</passo>
+								<passo>Misture todos os ingredientes e sirva.</passo>
+							</passos>
+						</descriçao>
+					</receita>
+				</sub_secçao>
+				<sub_secçao tipo="vaca">
+					<titulo>Prato de Vaca</titulo>
+					<texto_introdutorio>Usando carne de vaca como ingrediente principal</texto_introdutorio>
+
+					<receita id_receita="carne_a_jardineira" dificuldade="Díficil"
+						custo="Barato" categoria="Prato" tempo="Longo">
+						<ingredientes>
+
+							<ingrediente id_ingrediente="carne_vaca">
+								<nome>Carne de Vaca</nome>
+								<quantidade>2</quantidade>
+								<unidade> Kg</unidade>
+							</ingrediente>
+						</ingredientes>
+						<nome>Carne à Jardineira</nome>
+						<calorias>2358</calorias>
+						<url
+							url="http://receitasdecomidas.com.br/wp-content/uploads/jardineira.jpg"
+							alt="Stock Image" />
+						<descriçao>
+							<texto>
+								Metodo de preparação igual ao da
+								<ref_receita id_receita="carne_porco_alentejana" />
+								basta apenas trocar o uso de
+								<ref_ingrediente id_ingrediente="carne_porco" />
+								por
+								<ref_ingrediente id_ingrediente="carne_vaca" />
+								.
+							</texto>
+						</descriçao>
+					</receita>
+				</sub_secçao>
+			</secçao>
+		</parte>
+	</corpo>
+</livro_de_receitas>

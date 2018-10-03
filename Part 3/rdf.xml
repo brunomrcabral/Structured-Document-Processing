@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [ 
+<!ENTITY rdf  "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs  "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY dc  "http://purl.org/dc/elements/1.1/">
+<!ENTITY foaf  "http://xmlns.com/foaf/0.1/">
+<!ENTITY rel  "http://www.dcc.fc.up.pt/~zp/guiao/">
+
+]>
+
+<rdf:RDF xmlns:rdf="&rdf;" xmlns:rdfs="&rdfs;" xmlns:dc="&dc;"
+	xmlns:foaf="&foaf;" xmlns:rel="&rel;" xml:base="&rel;">
+	
+	<rdfs:Class rdf:about="Livro_De_Receitas" />
+	
+	<rdfs:Class rdf:about="Corpo" />
+	
+	<rdfs:Class rdf:about="Livro_De_Receitas">
+		<rdfs:subClassOf rdf:resource="Livro_De_Receitas" />
+	</rdfs:Class>
+	
+	<rdfs:Class rdf:about="Parte">
+		<rdfs:subClassOf rdf:resource="Corpo" />
+	</rdfs:Class>
+
+	<rdfs:Class rdf:about="Secçao">
+		<rdfs:subClassOf rdf:resource="Corpo" />
+	</rdfs:Class>
+	
+	<rdfs:Class rdf:about="Sub-Secçao">
+		<rdfs:subClassOf rdf:resource="Corpo" />
+	</rdfs:Class>
+	
+	<rdfs:Class rdf:about="Receita">
+		<rdfs:subClassOf rdf:resource="Corpo" />
+	</rdfs:Class>
+	
+	
+	<rdfs:Class rdf:about="indice">
+		<rdfs:domain rdf:resource="Livro_De_Receitas" />
+		<rdfs:range rdf:resource="Livro_De_Receitas" />
+	</rdfs:Class>
+	
+	<rdfs:Property rdf:about="titulo">
+		<rdfs:domain rdf:resource="Livro_De_Receitas" />
+		<rdfs:range rdf:resource="&rdfs;Literal" />
+	</rdfs:Property>
+	
+	<rdfs:Class rdf:about="autor">
+		<rdfs:domain rdf:resource="Livro_De_Receitas" />
+		<rdfs:range rdf:resource="&rdfs;Literal" />
+	</rdfs:Class>
+
+	<rdfs:Property rdf:about="data_publicaçao">
+		<rdfs:domain rdf:resource="Livro_De_Receitas" />
+		<rdfs:range rdf:resource="&rdfs;Literal" />
+	</rdfs:Property>
+
+</rdf:RDF>
+	
+	
